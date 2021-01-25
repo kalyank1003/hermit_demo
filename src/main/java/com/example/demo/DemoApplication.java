@@ -41,9 +41,9 @@ public class DemoApplication {
 		
 		String path = getPath();
 		
-		String input = path+"/data/input/test/new_input.owl";
+		String input = path+"/data/input/new_input.owl";
 
-		String output = path+"/data/output/test/rdf_out.xml";
+		String output = path+"/data/output/rdf_out.xml";
 
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 
