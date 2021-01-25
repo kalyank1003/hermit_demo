@@ -1,0 +1,2649 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dbpedia.org/ontology/"
+     xml:base="http://dbpedia.org/ontology/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:d0="http://www.ontologydesignpatterns.org/ont/d0.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:hp="urn:absolute://harbourpolitica/ontology/"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:cidoccrm="http://purl.org/NET/cidoc-crm/core#"
+     xmlns:wgs84pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:wikidata="http://www.wikidata.org/entity/">
+    <owl:Ontology rdf:about="urn:absolute://harbourpolitica/ontology/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/datatype/indianRupee -->
+
+    <rdfs:Datatype rdf:about="http://dbpedia.org/datatype/indianRupee">
+        <rdfs:label xml:lang="en">indianRupee</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#langString -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
+        <rdfs:label xml:lang="en">rdf:langString</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#double -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#double">
+        <rdfs:label xml:lang="en">xsd:double</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#float -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float">
+        <rdfs:label xml:lang="en">xsd:float</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear">
+        <rdfs:label xml:lang="en">xsd:gYear</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer">
+        <rdfs:label xml:lang="en">xsd:integer</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <rdfs:label xml:lang="en">xsd:string</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/MemberOfParliament -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/MemberOfParliament"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/memberOfParliament -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/memberOfParliament">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Abgeordnete</rdfs:label>
+        <rdfs:label xml:lang="en">Member of Parliament</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyProperty:memberOfParliament"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ACTIVE -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/ACTIVE">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/LokSabhaElection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/AT_TIME -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/AT_TIME">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/CONTAINS -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/CONTAINS">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/DONATED_TO -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/DONATED_TO">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/PoliticalDonor"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Party"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ELECTORAL_OPPONENT -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/ELECTORAL_OPPONENT">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/GOOGLE_SEARCH_VOLUME -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/GOOGLE_SEARCH_VOLUME">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HAS_AUTHOR -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HAS_AUTHOR">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse/Story"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryAuthor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HAS_CONTESTANT -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HAS_CONTESTANT">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <owl:inverseOf rdf:resource="urn:absolute://harbourpolitica/ontology/IS_CONTESTANT"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HAS_CONTESTANT_PARTY -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HAS_CONTESTANT_PARTY">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Party"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HAS_GENRE -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HAS_GENRE">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse/Story"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HAS_RUNNER -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HAS_RUNNER">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HAS_RUNNER_PARTY -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HAS_RUNNER_PARTY">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HAS_WINNER -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HAS_WINNER">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HAS_WINNER_PARTY -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HAS_WINNER_PARTY">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Party"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties">
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaClasses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/INCUMBENT_MEMBER_OF_PARLIAMENT -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/INCUMBENT_MEMBER_OF_PARLIAMENT">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/IS_CONTESTANT -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/IS_CONTESTANT">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/IS_HELD_BY -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/IS_HELD_BY">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/IS_NOMINEE_OF -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/IS_NOMINEE_OF">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/Party"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/IS_PART_OF -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/IS_PART_OF">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/IS_SIMILAR_TO -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/IS_SIMILAR_TO">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/PUBLISHED_BY -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/PUBLISHED_BY">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse/Story"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryPublisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/SAME_AS -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/SAME_AS">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/WIKIPAGEVIEWS_VOLUME -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/WIKIPAGEVIEWS_VOLUME">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/WON_ELECTION_FROM -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute://harbourpolitica/ontology/WON_ELECTION_FROM">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaObjectProperties"/>
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/Candidate"/>
+        <rdfs:range rdf:resource="urn:absolute://harbourpolitica/ontology/Party"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Name -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/Name"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/name -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/name">
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label xml:lang="de">Name</rdfs:label>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyProperty:name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties">
+        <rdfs:domain rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaClasses"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/abreviation -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/abreviation">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/abreviationAlias -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/abreviationAlias">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/address -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/address">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/age -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/age">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/body -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/body">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/careOf -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/careOf">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/category -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/category">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/censusCode -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/censusCode">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/constituencyReservationType -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/constituencyReservationType">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/contributionAmount -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/contributionAmount">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/datatype/indianRupee"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/contributionMode -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/contributionMode">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/cosineSimilarity -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/cosineSimilarity">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/createdDate -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/createdDate">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/dateString -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/dateString">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/districtCensusCode -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/districtCensusCode">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/dob -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/dob">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/dominantReligion -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/dominantReligion">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/edbId -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/edbId">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/education -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/education">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/electors -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/electors">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/endYear -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/endYear">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/enop -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/enop">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/entityType -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/entityType">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/financialYear -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/financialYear">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/geometry -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/geometry">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/geometryType -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/geometryType">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasAssets -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasAssets">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/datatype/indianRupee"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasAssets2009 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasAssets2009">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasAssets"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasAssets2014 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasAssets2014">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasAssets"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasAssets2019 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasAssets2019">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasAssets"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasCriminalcases -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasCriminalcases">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasCriminalcases2009 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasCriminalcases2009">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasCriminalcases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasCriminalcases2014 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasCriminalcases2014">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasCriminalcases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasCriminalcases2019 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasCriminalcases2019">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasCriminalcases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasCurrentPosition -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasCurrentPosition">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasLiabilities -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasLiabilities">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/datatype/indianRupee"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasLiabilities2009 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasLiabilities2009">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasLiabilities"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasLiabilities2014 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasLiabilities2014">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasLiabilities"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hasLiabilities2019 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hasLiabilities2019">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/hasLiabilities"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/highestDegree -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/highestDegree">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hindiHeartland -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hindiHeartland">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/hpIdn -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/hpIdn">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/identifier -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/identifier">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/iou -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/iou">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/latestElectionResult -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/latestElectionResult">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/literacyRate -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/literacyRate">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/location -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/location">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/lokSabhaEletionId -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/lokSabhaEletionId">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/modifiedDate -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/modifiedDate">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/name -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/name">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/nameAlias -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/nameAlias">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/nameAsVoterIn -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/nameAsVoterIn">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/notaPercentage -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/notaPercentage">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/notaRank -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/notaRank">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/notaVotes -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/notaVotes">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/panGiven -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/panGiven">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/parliamentaryConstituency -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/parliamentaryConstituency">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/partyAbreviation -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/partyAbreviation">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/partyHoldingsLevel -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/partyHoldingsLevel">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/pcId -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/pcId">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/pcName -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/pcName">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/percentageTurnout -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/percentageTurnout">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/pincode -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/pincode">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/portfolio -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/portfolio">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/position -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/position">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/rank -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/rank">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/region -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/region">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/salience -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/salience">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/selfProfession -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/selfProfession">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/settlementType -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/settlementType">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/sex -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/sex">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/spouseProfession -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/spouseProfession">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/startYear -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/startYear">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/status -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/status">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/totalVotes -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/totalVotes">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/unionTerritory -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/unionTerritory">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/uri -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/uri">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/vector -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/vector">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/votes -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/votes">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/wikidataId -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/wikidataId">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/wikipediaUrl -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/wikipediaUrl">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/year -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/year">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/yearActive -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute://harbourpolitica/ontology/yearActive">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaDataProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/AdministrativeRegion -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AdministrativeRegion">
+        <owl:equivalentClass rdf:resource="http://schema.org/AdministrativeArea"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Region"/>
+        <rdfs:comment xml:lang="en">A PopulatedPlace under the jurisdiction of an administrative body. This body may administer either a whole region or one or more adjacent Settlements (town administration)</rdfs:comment>
+        <rdfs:label xml:lang="de">Verwaltungsregion</rdfs:label>
+        <rdfs:label xml:lang="en">administrative region</rdfs:label>
+        <rdfs:label xml:lang="nl">bestuurlijk gebied</rdfs:label>
+        <rdfs:label xml:lang="it">regione amministrativa</rdfs:label>
+        <rdfs:label xml:lang="gl">rexión administrativa</rdfs:label>
+        <rdfs:label xml:lang="fr">région administrative</rdfs:label>
+        <rdfs:label xml:lang="ga">réigiún riaracháin</rdfs:label>
+        <rdfs:label xml:lang="el">διοικητική περιφέρεια</rdfs:label>
+        <rdfs:label xml:lang="ja">行政区画</rdfs:label>
+        <rdfs:label xml:lang="zh">行政區</rdfs:label>
+        <rdfs:label xml:lang="ko">관리 지역</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:AdministrativeRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Agent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Agent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:comment xml:lang="en">Analogous to a foaf:Agent, an agent is an entity that acts. This is intended to be the super class of Person and Organisation.</rdfs:comment>
+        <rdfs:comment xml:lang="gl">Análogo a foaf:Agent, un axente é unha entidade que actúa. Destínase a ser a super clase de Persoa e Organización.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Ανάλογα με την κλάση foaf:Agent, ένας πράκτορας είναι μια οντότητα που ενεργεί. Αυτό προορίζεται να είναι μια υπερκλάση της κλάσης Άτόμο και Οργανισμός.</rdfs:comment>
+        <rdfs:label xml:lang="de">Agent</rdfs:label>
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <rdfs:label xml:lang="fr">agent</rdfs:label>
+        <rdfs:label xml:lang="nl">agent</rdfs:label>
+        <rdfs:label xml:lang="es">agente</rdfs:label>
+        <rdfs:label xml:lang="it">agente</rdfs:label>
+        <rdfs:label xml:lang="gl">axente</rdfs:label>
+        <rdfs:label xml:lang="ga">gníomhaire</rdfs:label>
+        <rdfs:label xml:lang="el">πράκτορας</rdfs:label>
+        <rdfs:label xml:lang="ja">エージェント</rdfs:label>
+        <rdfs:label xml:lang="ko">에이전트</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Company -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Company">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+        <rdfs:label xml:lang="de">Unternehmen</rdfs:label>
+        <rdfs:label xml:lang="nl">bedrijf</rdfs:label>
+        <rdfs:label xml:lang="ga">comhlacht</rdfs:label>
+        <rdfs:label xml:lang="en">company</rdfs:label>
+        <rdfs:label xml:lang="es">empresa</rdfs:label>
+        <rdfs:label xml:lang="pt">empresa</rdfs:label>
+        <rdfs:label xml:lang="fr">entreprise</rdfs:label>
+        <rdfs:label xml:lang="el">εταιρία</rdfs:label>
+        <rdfs:label xml:lang="ja">会社</rdfs:label>
+        <rdfs:label xml:lang="ko">회사</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Department -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Department">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"/>
+        <rdfs:label xml:lang="de">Distrikt</rdfs:label>
+        <rdfs:label xml:lang="es">Distrito</rdfs:label>
+        <rdfs:label xml:lang="nl">departement</rdfs:label>
+        <rdfs:label xml:lang="en">department</rdfs:label>
+        <rdfs:label xml:lang="fr">département</rdfs:label>
+        <rdfs:label xml:lang="ga">roinn</rdfs:label>
+        <rdfs:label xml:lang="el">τμήμα</rdfs:label>
+        <rdfs:label xml:lang="ko">부서</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Election -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Election">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+        <rdfs:label xml:lang="en">Election</rdfs:label>
+        <rdfs:label xml:lang="de">Wahl</rdfs:label>
+        <rdfs:label xml:lang="es">elección</rdfs:label>
+        <rdfs:label xml:lang="it">elezione</rdfs:label>
+        <rdfs:label xml:lang="ga">toghchán</rdfs:label>
+        <rdfs:label xml:lang="nl">verkiezing</rdfs:label>
+        <rdfs:label xml:lang="fr">élection</rdfs:label>
+        <rdfs:label xml:lang="el">εκλογή</rdfs:label>
+        <rdfs:label xml:lang="ja">選挙</rdfs:label>
+        <rdfs:label xml:lang="ko">선거</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Election"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Event -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Event">
+        <owl:equivalentClass rdf:resource="http://schema.org/Event"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Ereignis</rdfs:label>
+        <rdfs:label xml:lang="en">event</rdfs:label>
+        <rdfs:label xml:lang="pt">evento</rdfs:label>
+        <rdfs:label xml:lang="nl">gebeurtenis</rdfs:label>
+        <rdfs:label xml:lang="fr">évènement</rdfs:label>
+        <rdfs:label xml:lang="ga">ócáid</rdfs:label>
+        <rdfs:label xml:lang="el">γεγονός</rdfs:label>
+        <rdfs:label xml:lang="ja">イベント</rdfs:label>
+        <rdfs:label xml:lang="ko">사건</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Genre -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Genre">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/TopicalConcept"/>
+        <rdfs:label xml:lang="de">Genre</rdfs:label>
+        <rdfs:label xml:lang="en">genre</rdfs:label>
+        <rdfs:label xml:lang="nl">genre</rdfs:label>
+        <rdfs:label xml:lang="es">género</rdfs:label>
+        <rdfs:label xml:lang="ga">seánra</rdfs:label>
+        <rdfs:label xml:lang="el">ύφος</rdfs:label>
+        <rdfs:label xml:lang="ja">ジャンル</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/GovernmentalAdministrativeRegion -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+        <rdfs:comment xml:lang="en">An administrative body governing some territorial unity, in this case a governmental administrative body</rdfs:comment>
+        <rdfs:label xml:lang="nl">gebied onder overheidsbestuur</rdfs:label>
+        <rdfs:label xml:lang="en">governmental administrative region</rdfs:label>
+        <rdfs:label xml:lang="fr">région administrative d&apos;état</rdfs:label>
+        <rdfs:label xml:lang="de">staatliche Verwaltungsregion</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:GovernmentalAdministrativeRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Journalist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Journalist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Journalist</rdfs:label>
+        <rdfs:label xml:lang="it">giornalista</rdfs:label>
+        <rdfs:label xml:lang="ga">iriseoir</rdfs:label>
+        <rdfs:label xml:lang="en">journalist</rdfs:label>
+        <rdfs:label xml:lang="nl">journalist</rdfs:label>
+        <rdfs:label xml:lang="fr">journaliste</rdfs:label>
+        <rdfs:label xml:lang="es">periodista</rdfs:label>
+        <rdfs:label xml:lang="el">δημοσιογράφος</rdfs:label>
+        <rdfs:label xml:lang="ja">ジャーナリスト</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Journalist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MemberOfParliament -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MemberOfParliament">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Name -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Name">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Organisation -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Organisation">
+        <owl:equivalentClass rdf:resource="http://schema.org/Organization"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Agent"/>
+        <rdfs:label xml:lang="de">Organisation</rdfs:label>
+        <rdfs:label xml:lang="nl">organisatie</rdfs:label>
+        <rdfs:label xml:lang="en">organisation</rdfs:label>
+        <rdfs:label xml:lang="fr">organisation</rdfs:label>
+        <rdfs:label xml:lang="sl">organizacija</rdfs:label>
+        <rdfs:label xml:lang="es">organización</rdfs:label>
+        <rdfs:label xml:lang="pt">organização</rdfs:label>
+        <rdfs:label xml:lang="el">οργάνωση</rdfs:label>
+        <rdfs:label xml:lang="ru">Организация</rdfs:label>
+        <rdfs:label xml:lang="ja">組織</rdfs:label>
+        <rdfs:label xml:lang="ko">조직</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Parliament -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Parliament">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+        <rdfs:label xml:lang="de">Parlament</rdfs:label>
+        <rdfs:label xml:lang="ga">parlaimint</rdfs:label>
+        <rdfs:label xml:lang="es">parlamento</rdfs:label>
+        <rdfs:label xml:lang="fr">parlement</rdfs:label>
+        <rdfs:label xml:lang="nl">parlement</rdfs:label>
+        <rdfs:label xml:lang="en">parliament</rdfs:label>
+        <rdfs:label xml:lang="el">κοινοβούλιο</rdfs:label>
+        <rdfs:label xml:lang="ja">議会</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Parliament"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+        <owl:equivalentClass rdf:resource="http://schema.org/Person"/>
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Agent"/>
+        <rdfs:label xml:lang="sl">Oseba</rdfs:label>
+        <rdfs:label xml:lang="de">Person</rdfs:label>
+        <rdfs:label xml:lang="ga">duine</rdfs:label>
+        <rdfs:label xml:lang="pl">osoba</rdfs:label>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:label xml:lang="es">persona</rdfs:label>
+        <rdfs:label xml:lang="it">persona</rdfs:label>
+        <rdfs:label xml:lang="fr">personne</rdfs:label>
+        <rdfs:label xml:lang="nl">persoon</rdfs:label>
+        <rdfs:label xml:lang="eu">pertsona</rdfs:label>
+        <rdfs:label xml:lang="pt">pessoa</rdfs:label>
+        <rdfs:label xml:lang="el">Πληροφορίες προσώπου</rdfs:label>
+        <rdfs:label xml:lang="hy">անձ</rdfs:label>
+        <rdfs:label xml:lang="ar">شخص</rdfs:label>
+        <rdfs:label xml:lang="ja">人_(法律)</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Place -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Place">
+        <owl:equivalentClass rdf:resource="http://schema.org/Place"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Immobile things or locations.</rdfs:comment>
+        <rdfs:comment xml:lang="pt">uma localização</rdfs:comment>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+        <rdfs:label xml:lang="eu">lekua</rdfs:label>
+        <rdfs:label xml:lang="fr">lieu</rdfs:label>
+        <rdfs:label xml:lang="ca">lloc</rdfs:label>
+        <rdfs:label xml:lang="es">lugar</rdfs:label>
+        <rdfs:label xml:lang="pt">lugar</rdfs:label>
+        <rdfs:label xml:lang="pl">miejsce</rdfs:label>
+        <rdfs:label xml:lang="nl">plaats</rdfs:label>
+        <rdfs:label xml:lang="en">place</rdfs:label>
+        <rdfs:label xml:lang="ga">áit</rdfs:label>
+        <rdfs:label xml:lang="el">περιοχή</rdfs:label>
+        <rdfs:label xml:lang="ar">مكان</rdfs:label>
+        <rdfs:label xml:lang="ja">立地</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PoliticalParty -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PoliticalParty">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+        <rdfs:comment xml:lang="en">for example: Democratic_Party_(United_States)</rdfs:comment>
+        <rdfs:comment xml:lang="el">για παράδειγμα: Δημοκρατικό Κόμμα _United_States)</rdfs:comment>
+        <rdfs:label xml:lang="fr">parti politique</rdfs:label>
+        <rdfs:label xml:lang="pl">partia polityczna</rdfs:label>
+        <rdfs:label xml:lang="es">partido político</rdfs:label>
+        <rdfs:label xml:lang="pt">partido político</rdfs:label>
+        <rdfs:label xml:lang="ca">partit polític</rdfs:label>
+        <rdfs:label xml:lang="en">political party</rdfs:label>
+        <rdfs:label xml:lang="nl">politieke partij</rdfs:label>
+        <rdfs:label xml:lang="de">politische Partei</rdfs:label>
+        <rdfs:label xml:lang="el">πολιτικό κόμμα</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Politician -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Politician">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Politiker</rdfs:label>
+        <rdfs:label xml:lang="ga">polaiteoir</rdfs:label>
+        <rdfs:label xml:lang="en">politician</rdfs:label>
+        <rdfs:label xml:lang="fr">politicien</rdfs:label>
+        <rdfs:label xml:lang="nl">politicus</rdfs:label>
+        <rdfs:label xml:lang="sl">politik</rdfs:label>
+        <rdfs:label xml:lang="pt">político</rdfs:label>
+        <rdfs:label xml:lang="el">πολιτικός</rdfs:label>
+        <rdfs:label xml:lang="ja">政治家</rdfs:label>
+        <rdfs:label xml:lang="ko">정치인</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Politician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PoliticianSpouse -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PoliticianSpouse">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Ehepartner eines Politiker</rdfs:label>
+        <rdfs:label xml:lang="en">politician spouse</rdfs:label>
+        <rdfs:label xml:lang="el">σύζυγος πολιτικού</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:PoliticianSpouse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PopulatedPlace -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PopulatedPlace">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:comment xml:lang="en">As defined by the United States Geological Survey, a populated place is a place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates (http://en.wikipedia.org/wiki/Populated_place).</rdfs:comment>
+        <rdfs:comment xml:lang="el">Πυκνοκατοικημένη περιοχή, είναι η περιοχή ή το μέρος με μεγάλο αριθμό κτιρίων και μεγάλο μόνιμο πληθυσμό, σε σύγκριση με την γεωγραφική περιοχή που καταλαμβάνει (μεγαλούπολη, πόλη ή χωριό).</rdfs:comment>
+        <rdfs:label xml:lang="nl">bebouwde omgeving</rdfs:label>
+        <rdfs:label xml:lang="de">bewohnter Ort</rdfs:label>
+        <rdfs:label xml:lang="fr">lieu habité</rdfs:label>
+        <rdfs:label xml:lang="en">populated place</rdfs:label>
+        <rdfs:label xml:lang="el">πυκνοκατοικημένη περιοχή</rdfs:label>
+        <rdfs:label xml:lang="ar">تجمع سكاني</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:PopulatedPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Publisher -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Publisher">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Company"/>
+        <rdfs:comment xml:lang="en">Publishing company</rdfs:comment>
+        <rdfs:label xml:lang="de">Herausgeber</rdfs:label>
+        <rdfs:label xml:lang="es">editor</rdfs:label>
+        <rdfs:label xml:lang="ga">foilsitheoir</rdfs:label>
+        <rdfs:label xml:lang="en">publisher</rdfs:label>
+        <rdfs:label xml:lang="nl">uitgever</rdfs:label>
+        <rdfs:label xml:lang="fr">éditeur</rdfs:label>
+        <rdfs:label xml:lang="el">εκδότης</rdfs:label>
+        <rdfs:label xml:lang="ja">出版社</rdfs:label>
+        <rdfs:label xml:lang="ko">출판사</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Publisher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Region -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Region">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/PopulatedPlace"/>
+        <rdfs:label xml:lang="de">Region</rdfs:label>
+        <rdfs:label xml:lang="nl">regio</rdfs:label>
+        <rdfs:label xml:lang="en">region</rdfs:label>
+        <rdfs:label xml:lang="fr">région</rdfs:label>
+        <rdfs:label xml:lang="ga">réigiún</rdfs:label>
+        <rdfs:label xml:lang="el">περιοχή</rdfs:label>
+        <rdfs:label xml:lang="ja">地域</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SocietalEvent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SocietalEvent">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Event"/>
+        <rdfs:comment xml:lang="en">an event that is clearly different from strictly personal events</rdfs:comment>
+        <rdfs:label xml:lang="de">gesellschatliches Ereignis</rdfs:label>
+        <rdfs:label xml:lang="nl">maatschappelijke gebeurtenis</rdfs:label>
+        <rdfs:label xml:lang="en">societal event</rdfs:label>
+        <rdfs:label xml:lang="fr">évènement collectif</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TopicalConcept -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TopicalConcept">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="ga">coincheap i mbéal an phobail</rdfs:label>
+        <rdfs:label xml:lang="de">thematisches Konzept</rdfs:label>
+        <rdfs:label xml:lang="en">topical concept</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:TopicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://schema.org/AdministrativeArea -->
+
+    <owl:Class rdf:about="http://schema.org/AdministrativeArea"/>
+    
+
+
+    <!-- http://schema.org/Event -->
+
+    <owl:Class rdf:about="http://schema.org/Event"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/AdministrativeDivisions -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/AdministrativeDivisions">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/DivionsIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/AssemblyConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/AssemblyConstituency">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectoralDivisions"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/CabinetMinister -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/CabinetMinister">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                        <owl:hasValue>Cabinet Minister</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/Candidate -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/Candidate">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ChiefMinister -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ChiefMinister">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                        <owl:hasValue>Chief Minister</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ChristianMajorityConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ChristianMajorityConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                        <owl:hasValue>C</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/District -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/District">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/AdministrativeDivisions"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/DivionsIndia -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/DivionsIndia">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Region"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ElectionUniverse -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ElectionUniverse">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ElectionsIndia -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ElectionsIndia">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Election"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ElectoralDivisions -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ElectoralDivisions">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/DivionsIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/GeneralCandidate -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/GeneralCandidate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ScheduledCasteCandidate"/>
+                                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ScheduledTribeCandidate"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/GeneralConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/GeneralConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/constituencyReservationType"/>
+                        <owl:hasValue>GENERAL</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+        <owl:disjointWith rdf:resource="urn:absolute://harbourpolitica/ontology/ScheduledCasteConstituency"/>
+        <owl:disjointWith rdf:resource="urn:absolute://harbourpolitica/ontology/ScheduledTribeConstituency"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/GoogleTrendUniverseEntity -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/GoogleTrendUniverseEntity">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/TrendUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/Governor -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/Governor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                        <owl:hasValue>Governor</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HarbourPoliticaClasses -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/HarbourPoliticaClasses"/>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HindiHeartland -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/HindiHeartland">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/StateAndUnionTerritory"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/hindiHeartland"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/LinguisticDivisions"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HindiHeartlandCandidate -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/HindiHeartlandCandidate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/IS_CONTESTANT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/HindiHeartlandConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HindiHeartlandConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/HindiHeartlandConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/IS_PART_OF"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/HindiHeartland"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HindiHeartlandMP -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/HindiHeartlandMP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/INCUMBENT_MEMBER_OF_PARLIAMENT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/HindiHeartlandConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/LokSabha"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/HinduMajorityConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/HinduMajorityConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                        <owl:hasValue>H</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/LegislatureIndia -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/LegislatureIndia">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Parliament"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/LinguisticDivisions -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/LinguisticDivisions">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/DivionsIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/LokSabha -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/LokSabha">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/INCUMBENT_MEMBER_OF_PARLIAMENT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentOfIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/LokSabhaElection -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/LokSabhaElection">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionsIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/LokSabhaRajyaSabhaHoldings -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/LokSabhaRajyaSabhaHoldings">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Deputy Prime Minister</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Deputy Speaker LS</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Leader of House RS</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Leader of Opposition LS</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Leader of Opposition RS</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Speaker of the House LS</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Vice President</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/MinisterOfState -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/MinisterOfState">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Minister of State</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                                <owl:hasValue>Minister of State (Independent Charge)</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/MixedRelegiousConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/MixedRelegiousConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                                <owl:hasValue>H*</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                                <owl:hasValue>HB</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                                <owl:hasValue>HC</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                                <owl:hasValue>HM</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                                <owl:hasValue>HS</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/MuslimMajorityConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/MuslimMajorityConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                        <owl:hasValue>M</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/NationalParty -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/NationalParty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Party"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/status"/>
+                        <owl:hasValue>NATIONAL</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/Party"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/NonRecognizedParty -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/NonRecognizedParty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Party"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/status"/>
+                        <owl:hasValue>NON RECOGNIZED</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/Party"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/OfficialPosition -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/OfficialPosition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                        <owl:hasValue>President</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ParliamentOfIndia -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentOfIndia">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/LegislatureIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectoralDivisions"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/Party -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/Party">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/PoliticalParty"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/PartyHoldings -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/PartyHoldings">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/PoliticalDonor -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/PoliticalDonor">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/PresidentOfIndia -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/PresidentOfIndia">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/PrimeMinsiterOfIndia -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/PrimeMinsiterOfIndia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/position"/>
+                        <owl:hasValue>Prime Minister</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/OfficialPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/RajyaSabha -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/RajyaSabha">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ParliamentOfIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/RegionalParty -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/RegionalParty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Party"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/status"/>
+                        <owl:hasValue>REGIONAL</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/Party"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/RuralCandidate -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/RuralCandidate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/IS_CONTESTANT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/RuralConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/RuralConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/RuralConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/settlementType"/>
+                        <owl:hasValue>RURAL</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+        <owl:disjointWith rdf:resource="urn:absolute://harbourpolitica/ontology/UrbanConstituency"/>
+        <owl:disjointWith rdf:resource="urn:absolute://harbourpolitica/ontology/UrbanRuralConstituency"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ScheduledCasteCandidate -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ScheduledCasteCandidate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/IS_CONTESTANT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/ScheduledCasteConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ScheduledCasteConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ScheduledCasteConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/constituencyReservationType"/>
+                        <owl:hasValue>SC</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+        <owl:disjointWith rdf:resource="urn:absolute://harbourpolitica/ontology/ScheduledTribeConstituency"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ScheduledCasteMP -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ScheduledCasteMP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/INCUMBENT_MEMBER_OF_PARLIAMENT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/ScheduledCasteConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/LokSabha"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ScheduledTribeCandidate -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ScheduledTribeCandidate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/IS_CONTESTANT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/ScheduledTribeConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ScheduledTribeConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ScheduledTribeConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/constituencyReservationType"/>
+                        <owl:hasValue>ST</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/ScheduledTribeMP -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/ScheduledTribeMP">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/INCUMBENT_MEMBER_OF_PARLIAMENT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/ScheduledTribeConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/LokSabha"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/SikhMajorityConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/SikhMajorityConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/dominantReligion"/>
+                        <owl:hasValue>S</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/StateAndUnionTerritory -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/StateAndUnionTerritory">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/AdministrativeDivisions"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/StateLegislature -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/StateLegislature">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/LegislatureIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/StoryUniverse -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/StoryUniverse">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/SubDistrict -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/SubDistrict">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/AdministrativeDivisions"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/TrendUniverse -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/TrendUniverse">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/TwitterUniverseEntity -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/TwitterUniverseEntity">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/TrendUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/UnionTerritory -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/UnionTerritory">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/StateAndUnionTerritory"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/unionTerritory"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/StateAndUnionTerritory"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/UrbanCandidate -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/UrbanCandidate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/IS_CONTESTANT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/UrbanConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/UrbanConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/UrbanConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/settlementType"/>
+                        <owl:hasValue>URBAN</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+        <owl:disjointWith rdf:resource="urn:absolute://harbourpolitica/ontology/UrbanRuralConstituency"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/UrbanRuralCandidate -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/UrbanRuralCandidate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/Candidate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/IS_CONTESTANT"/>
+                        <owl:someValuesFrom rdf:resource="urn:absolute://harbourpolitica/ontology/UrbanRuralConstituency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/UrbanRuralConstituency -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/UrbanRuralConstituency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute://harbourpolitica/ontology/ParliamentaryConstituency"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:absolute://harbourpolitica/ontology/settlementType"/>
+                        <owl:hasValue>URBAN RURAL</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/HarbourPoliticaConcepts"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/VidhanSabhaElection -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/VidhanSabhaElection">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/ElectionsIndia"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/WikipageviewUniverseEntity -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/WikipageviewUniverseEntity">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/TrendUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/StoryUniverse/Story -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/StoryUniverse/Story">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryAuthor -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryAuthor">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Journalist"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryEntity -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryEntity">
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryGenre -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryGenre">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Genre"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryPublisher -->
+
+    <owl:Class rdf:about="urn:absolute://harbourpolitica/ontology/StoryUniverse/StoryPublisher">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Publisher"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute://harbourpolitica/ontology/StoryUniverse"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/ -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ontology/">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/MemberOfParliament">
+        <rdfs:label xml:lang="en">member of parliament</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MemberOfParliament"/>
+        <rdfs:label xml:lang="nl">parlementslid</rdfs:label>
+        <rdfs:label xml:lang="fr">membre du Parlement</rdfs:label>
+        <rdfs:label xml:lang="de">Parlamentsmitglied</rdfs:label>
+        <rdfs:label xml:lang="el">Μέλος κοινοβουλίου</rdfs:label>
+        <rdfs:label xml:lang="pt">membro do parlamento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/Name">
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Name"/>
+        <rdfs:label xml:lang="de">Name</rdfs:label>
+        <rdfs:label xml:lang="ja">名前</rdfs:label>
+        <rdfs:label xml:lang="fr">nom</rdfs:label>
+        <rdfs:label xml:lang="el">όνομα</rdfs:label>
+        <rdfs:label xml:lang="nl">naam</rdfs:label>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+        <rdfs:label xml:lang="pl">nazwa</rdfs:label>
+        <rdfs:label xml:lang="pt">nome</rdfs:label>
+        <rdfs:label xml:lang="ga">ainm</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
