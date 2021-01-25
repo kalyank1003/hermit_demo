@@ -38,6 +38,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(DemoApplication.class, args);
+		long start = System.currentTimeMillis();
 		
 		String path = getPath();
 		
@@ -90,7 +91,11 @@ public class DemoApplication {
 		inferredOntologyFile = inferredOntologyFile.getAbsoluteFile();
 		OutputStream outputStream = new FileOutputStream(inferredOntologyFile);
 		manager.saveOntology(inferredAxiomsOntology, manager.getOntologyFormat(ontology), outputStream);
+		
+		long end = System.currentTimeMillis();
+		long time_taken = end - start;
 		System.out.println("Completed");
+		System.out.println("Time taken:" + time_taken + "ms");
 
 	}
 	
